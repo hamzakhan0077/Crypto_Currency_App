@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="crypto.xsd" generated="2011-11-05T23:09:59">
+
+    <crypto>
+        <name>Bitcoin</name>
+        <coinCode> BTC</coinCode>
+        <currentValue>$20,603</currentValue>
+        <marketCap>$395.56B </marketCap>
+        <rating>B+</rating>
+        <image>btc</image>
+        <url>https://www.coingecko.com/en/coins/bitcoin</url>
+    </crypto>
+
+    <crypto>
+        <name>Ethereum</name>
+        <coinCode>ETH</coinCode>
+        <currentValue>$1,579</currentValue>
+        <marketCap>$193.24B </marketCap>
+        <rating>B-</rating>
+        <image>eth</image>
+        <url>https://www.coingecko.com/en/coins/ethereum</url>
+    </crypto>
+
+
+
+    <crypto>
+        <name>Cardano </name>
+        <coinCode>ADA</coinCode>
+        <currentValue>$0.4075 </currentValue>
+        <marketCap>$13.75B </marketCap>
+        <rating>B-</rating>
+        <image>ada</image>
+        <url>https://www.coingecko.com/en/coins/cardano</url>
+    </crypto>
+
+
+
+    <crypto>
+        <name>Doge Coin</name>
+        <coinCode>Doge </coinCode>
+        <currentValue>$0.1191</currentValue>
+        <marketCap>$16.27B </marketCap>
+        <rating>C+</rating>
+        <image>doge</image>
+        <url>https://www.coingecko.com/en/coins/dogecoin</url>
+    </crypto>
+
+
+
+    <crypto>
+        <name>Stellar</name>
+        <coinCode>XLM</coinCode>
+        <currentValue>$0.1140</currentValue>
+        <marketCap>$5.71B </marketCap>
+        <rating>B-</rating>
+        <image>sterllar</image>
+        <url>https://www.coingecko.com/en/coins/stellar</url>
+    </crypto>
+
+
+    <crypto>
+        <name>Ethereum Classic</name>
+        <coinCode>ETC</coinCode>
+        <currentValue>$25.61</currentValue>
+        <marketCap>$3.38B </marketCap>
+        <rating>C+</rating>
+        <image>etc</image>
+        <url>https://www.coingecko.com/en/coins/ethereum-classic</url>
+    </crypto>
+
+
+    <crypto>
+        <name>Shiba Inu</name>
+        <coinCode>SHIB</coinCode>
+        <currentValue>$0.00001249</currentValue>
+        <marketCap>$7.34B</marketCap>
+        <rating>C-</rating>
+        <image>shib</image>
+        <url>https://www.coingecko.com/en/coins/shiba-inu</url>
+    </crypto>
+
+
+    <crypto>
+        <name>Tron</name>
+        <coinCode> TRX</coinCode>
+        <currentValue>$0.06282</currentValue>
+        <marketCap>$5.79B</marketCap>
+        <rating>C</rating>
+        <image>tron</image>
+        <url>https://www.coingecko.com/en/coins/tron</url>
+    </crypto>
+
+
+    <crypto>
+        <name>Wink</name>
+        <coinCode>WINK</coinCode>
+        <currentValue>$0.0001085</currentValue>
+        <marketCap>$107.82MB </marketCap>
+        <rating>D</rating>
+        <image>wink</image>
+        <url>https://www.coingecko.com/en/coins/wink</url>
+    </crypto>
+
+
+    <crypto>
+        <name>Ripple</name>
+        <coinCode>XRP</coinCode>
+        <currentValue>$0.4942</currentValue>
+        <marketCap>$49.39B </marketCap>
+        <rating>B-</rating>
+        <image>xrp</image>
+        <url>https://www.coingecko.com/en/coins/xrp</url>
+    </crypto>
+
+</dataroot>
+
