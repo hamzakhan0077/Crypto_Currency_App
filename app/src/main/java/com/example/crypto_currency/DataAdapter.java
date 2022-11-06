@@ -53,6 +53,10 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             Crypto crypto = cryptos[holder.getAdapterPosition()];
             intent.putExtra("CryptoName", crypto.getName());
             intent.putExtra("CryptoImage", crypto.getImage());
+            intent.putExtra("CryptoCode", crypto.getCoinCode());
+            intent.putExtra("CryptoValue", crypto.getCurrentValue());
+            intent.putExtra("CryptoMarketCap", crypto.getMarketCap());
+            intent.putExtra("CryptoUrl", crypto.getUrl());
             context.startActivity(intent);
 
         }

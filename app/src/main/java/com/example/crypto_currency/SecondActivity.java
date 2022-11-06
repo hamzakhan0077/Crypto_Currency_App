@@ -22,19 +22,23 @@ public class SecondActivity extends AppCompatActivity {
         Button buttonCoinInfo = findViewById(R.id.button);
 
         Bundle bund = getIntent().getExtras();
-//        Crypto cryp = (Crypto)bund.getSerializable("CryptoName");
-//        Crypto cryp = (Crypto)bund.getSerializable("CryptoName");
         textViewCryptoName.setText(bund.getString("CryptoName"));
         Integer id = SecondActivity.this.getResources().getIdentifier(bund.getString("CryptoImage"),"drawable",
                 SecondActivity.this.getPackageName());
         coinImage.setImageResource(id);
+//        CryptoFromXML crypto = new CryptoFromXML(this);
 
         buttonCoinInfo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-//                Intent intent=new Intent(SecondActivity.this, ThirdActivity.class);
-//                intent.putExtra("CryptoName", cryp.getName());
-//                startActivity(intent);
+                Intent intent=new Intent(SecondActivity.this, ThirdActivity.class);
+
+//                Crypto[] cryptos = crypto.getCryptoCurrencies();
+                intent.putExtra("CryptoCode",bund.getString("CryptoCode") );
+                intent.putExtra("CryptoValue",bund.getString("CryptoValue") );
+                intent.putExtra("CryptoMarketCap",bund.getString("CryptoMarketCap") );
+                intent.putExtra("CryptoUrl",bund.getString("CryptoUrl") );
+                startActivity(intent);
 
 
             }
