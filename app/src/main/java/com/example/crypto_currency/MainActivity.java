@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     public RecyclerView recyclerView = null;
     public DataAdapter adapter = null;
     public CryptoFromXML crypto = null;
-    private DataAdapter.RecyclerViewClickListener listener;
+//    private DataAdapter.RecyclerViewClickListener listener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -24,7 +24,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         this.context = context;
         this.rowID = rowID;
         this.cryptos = cryptos;
-        this.listener = listener;
+//        this.listener = listener;
     }
 
 
@@ -52,11 +52,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             Intent intent = new Intent(context, SecondActivity.class);
             Crypto crypto = cryptos[holder.getAdapterPosition()];
             intent.putExtra("CryptoName", crypto.getName());
+            intent.putExtra("CryptoImage", crypto.getImage());
             context.startActivity(intent);
 
-
-            // do somthing with names[position]
-//                Toast.makeText(context, ((TextView)view).getText().toString(), Toast.LENGTH_LONG).show();
         }
     });
 
@@ -70,13 +68,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         return cryptos.length;
     }
     public interface RecyclerViewClickListener{
-        void onClick(View v, int position);
+//        void onClick(View v, int position);
 
 
     }
 
 
-    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public static class ViewHolder extends RecyclerView.ViewHolder{
 
         public TextView currencyCode;
         public ImageView image;
@@ -85,13 +83,13 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             super(itemView);
             this.currencyCode = itemView.findViewById(R.id.textViewCryptoName);
             this.image = itemView.findViewById(R.id.imageView);
-            itemView.setOnClickListener(this);
+//            itemView.setOnClickListener(this);
         }
 
-        @Override
-        public void onClick(View view) {
-            listener.onClick(view,getAdapterPosition());
-
-        }
+//        @Override
+//        public void onClick(View view) {
+//            listener.onClick(view,getAdapterPosition());
+//
+//        }
     }
 }
