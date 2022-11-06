@@ -6,11 +6,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
@@ -18,12 +22,14 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     private Context context;
     private int rowID;
     private Crypto[] cryptos;
-    private static RecyclerViewClickListener listener;
+
+//    private static RecyclerViewClickListener listener;
 
     public DataAdapter(Context context, int rowID, Crypto[] cryptos) {
         this.context = context;
         this.rowID = rowID;
         this.cryptos = cryptos;
+
 //        this.listener = listener;
     }
 
@@ -96,4 +102,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 //
 //        }
     }
+
+
 }

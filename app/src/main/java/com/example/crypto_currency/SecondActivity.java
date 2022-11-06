@@ -16,6 +16,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Crypto_Currency);
         setContentView(R.layout.activity_main_2);
         ImageView coinImage = findViewById(R.id.imageView2);
         TextView textViewCryptoName = findViewById(R.id.textView_img);

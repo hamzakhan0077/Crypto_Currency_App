@@ -7,6 +7,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     public RecyclerView recyclerView = null;
     public DataAdapter adapter = null;
@@ -15,7 +18,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
+        setTheme(R.style.Theme_Crypto_Currency);
         setContentView(R.layout.activity_main);
         // setup recyclerView
         recyclerView = findViewById(R.id.recyclerView);
@@ -26,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         crypto = new CryptoFromXML(this);
         Crypto[] cryptos = crypto.getCryptoCurrencies();
+
 
         // make adapter for it
         adapter = new DataAdapter(this, R.layout.row_layout, cryptos);

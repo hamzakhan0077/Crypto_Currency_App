@@ -22,4 +22,10 @@
     <style name="Theme.Crypto_Currency.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Crypto_Currency.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="btctheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/btc</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
 </resources>

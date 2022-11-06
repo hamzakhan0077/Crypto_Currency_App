@@ -15,6 +15,7 @@ public class ThirdActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTheme(R.style.Theme_Crypto_Currency);
         setContentView(R.layout.activity_main_3);
         TextView textViewData = findViewById(R.id.textView_data);
         Button buttonWebInfo = findViewById(R.id.button_to_webinfo);
